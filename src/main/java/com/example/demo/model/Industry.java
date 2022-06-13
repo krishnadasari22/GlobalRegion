@@ -10,8 +10,8 @@ public class Industry {
     public int id;
     @Column(name = "name")
     public String name;
-    @Column(name = "meta_data")
-    public String meta_data;
+    @Column(name = "meta_code")
+    public String meta_code;
 
     public int id() {
         return id;
@@ -30,11 +30,11 @@ public class Industry {
     }
 
     public String meta_data() {
-        return meta_data;
+        return meta_code;
     }
 
     public void setMeta_data(String meta_data) {
-        this.meta_data = meta_data;
+        this.meta_code = meta_code;
     }
 
     @Override
@@ -42,7 +42,7 @@ public class Industry {
         return "Industry{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", meta_data='" + meta_data + '\'' +
+                ", meta_data='" + meta_code + '\'' +
                 '}';
     }
 }
