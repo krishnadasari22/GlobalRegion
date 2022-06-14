@@ -29,11 +29,11 @@ public class Industry {
         this.name = name;
     }
 
-    public String meta_data() {
+    public String getMeta_code() {
         return meta_code;
     }
 
-    public void setMeta_data(String meta_data) {
+    public void setMeta_code(String meta_code) {
         this.meta_code = meta_code;
     }
 
